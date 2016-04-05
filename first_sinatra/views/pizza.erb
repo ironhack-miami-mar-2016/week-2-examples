@@ -1,0 +1,9 @@
+<h1>Ingredients for pizza</h1>
+
+<ul>
+  <% @ingredients.each do |ingred| %>
+    <li class="<%= ingred.length %>">
+      <%= ingred %>
+    </li>
+  <% end %>
+</ul>
