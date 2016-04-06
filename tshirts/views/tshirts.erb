@@ -1,0 +1,10 @@
+<h1> Nizar's Crazy T-Shirt Shop </h1>
+
+<ul>
+  <% @tshirts.each do |one_shirt| %>
+    <li>
+      <h2> <%= one_shirt.name %> </h2>
+      <img src="<%= one_shirt.picture_url %>" width="200" >
+    </li>
+  <% end %>
+</ul>
