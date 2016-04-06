@@ -1,0 +1,14 @@
+<h1> Nizar's Crazy T-Shirt Shop </h1>
+
+<h2> <%= @the_shirt.name %> </h2>
+
+<img src="<%= @the_shirt.picture_url %>">
+
+<form action="/add_to_cart" method="post">
+  <input type="hidden" name="shirt_id"
+      value="<%= @the_id %>">
+
+  <button type="submit">
+    Add to cart
+  </button>
+</form>
