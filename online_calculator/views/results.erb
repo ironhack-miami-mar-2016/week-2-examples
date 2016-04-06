@@ -1,0 +1,14 @@
+<h1>Online Calculator</h1>
+
+<h2>Result of addition</h2>
+
+<p> The result was <%= @result %>. </p>
+
+<form action="/save_to_memory" method="post">
+  <input type="hidden"
+      name="result" value="<%= @result %>">
+
+  <button type="submit">
+    Save this result for later
+  </button>
+</form>

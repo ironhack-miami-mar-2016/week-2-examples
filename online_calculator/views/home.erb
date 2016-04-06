@@ -1,0 +1,23 @@
+<h1>Online Calculator</h1>
+
+<h2>Add some numbers</h2>
+
+<form action="/calculate" method="post">
+  <label>First Number:</label>
+  <input type="number" name="first_number">
+  <!-- params[:first_number] -->
+
+  <label>Second Number:</label>
+
+  <% if @memory_number.nil? %>
+    <input type="number" name="second_number">
+  <% else %>
+    <input type="number" name="second_number" value="<%= @memory_number %>">
+  <% end %>
+
+  <!-- params[:second_number] -->
+
+  <button type="submit">
+    Submit
+  </button>
+</form>
